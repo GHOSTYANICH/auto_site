@@ -31,10 +31,6 @@
     const offset = current * visible * (cardWidth + gap);
     track.style.transform = `translateX(-${offset}px)`;
 
-    cards.forEach(c => c.classList.remove('active'));
-    const activeIndex = Math.min(current * visible, cards.length - 1);
-    cards[activeIndex].classList.add('active');
-
     Array.from(dotsBox.children).forEach((d, i) => d.classList.toggle('on', i === current));
   }
 
