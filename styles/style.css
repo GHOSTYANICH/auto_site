@@ -964,3 +964,208 @@
     visibility: visible;
     transform: translateX(-50%) translateY(0);
   }
+
+  /* =====================================================
+   ДОПОЛНИТЕЛЬНАЯ АДАПТИВНОСТЬ ДЛЯ ЭКРАНОВ ≤500px
+===================================================== */
+
+@media (max-width: 500px) {
+
+  /* ---------- hero ---------- */
+  .hero {
+    padding: 0 16px;
+    background-position-y: -120px;
+  }
+
+  .topbar {
+    padding: 18px 0 14px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .phone {
+    font-size: 16px;
+  }
+
+  .hero-inner {
+    padding-top: 40px;
+  }
+
+  .hero-title {
+    font-size: 26px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .hero-text {
+    font-size: 13px;
+  }
+
+  .cta-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 12px;
+  }
+
+  .socials {
+    margin-left: 0;
+    margin-top: 36px;
+  }
+
+  /* ---------- services ---------- */
+  .container {
+    padding: 0 16px;
+  }
+
+  .services {
+    padding: 40px 0 50px;
+    margin-top: 100px;
+  }
+
+  .services-head h2,
+  .whyus-head h2,
+  .fleet-head h2,
+  .contact-head h2,
+  .form-head h2 {
+    font-size: 20px;
+    white-space: normal;
+  }
+
+  .services-head .rule,
+  .whyus-head .rule,
+  .fleet-head .rule,
+  .contact-head .rule,
+  .form-head .rule {
+    flex: 0 0 40px;
+  }
+
+  .service-item {
+    padding: 12px 14px;
+    gap: 12px;
+  }
+
+  .service-item .num {
+    font-size: 20px;
+    min-width: 18px;
+  }
+
+  .service-item .info h4 {
+    font-size: 15px;
+  }
+
+  .service-item .info p {
+    font-size: 13px;
+  }
+
+  /* ---------- why us ---------- */
+  .whyus {
+    padding: 40px 0 50px;
+  }
+
+  .stats-card {
+    padding: 24px 20px;
+  }
+
+  .stat .num {
+    font-size: 30px;
+  }
+
+  .stat .label {
+    font-size: 15px;
+  }
+
+  .stat .desc {
+    font-size: 13px;
+  }
+
+  /* ---------- fleet ---------- */
+  .fleet {
+    padding: 10px 0 60px;
+  }
+
+  .fleet-card .caption {
+    padding: 14px 12px 16px;
+  }
+
+  /* ---------- contact / form ---------- */
+  .contact {
+    padding: 50px 0 60px;
+  }
+
+  .contact-flex {
+    padding: 0 16px;
+  }
+
+  .contact-left {
+    margin-bottom: 30px;
+  }
+
+  .contact-item h4 {
+    font-size: 14px;
+  }
+
+  .contact-item p {
+    font-size: 14px;
+  }
+
+  .contact-card {
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 18px 32px;
+    margin-right: 0;
+  }
+
+  .cta-form input {
+    padding: 16px 14px;
+    font-size: 14px;
+    margin-bottom: 14px;
+  }
+
+  .cta-form button {
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 12px;
+  }
+
+  .form-success .check {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-success p {
+    font-size: 15px;
+  }
+
+  /* ---------- footer ---------- */
+  .footer-inner {
+    padding: 0 16px;
+  }
+
+  .footer-inner .logo {
+    font-size: 18px;
+  }
+
+  .footer-inner .policy {
+    font-size: 12px;
+    white-space: normal;
+    text-align: center;
+  }
+
+  /* ---------- toast ---------- */
+  .toast {
+    left: 16px;
+    right: 16px;
+    transform: translateY(20px);
+    text-align: center;
+    bottom: 16px;
+  }
+
+  .toast.show {
+    transform: translateY(0);
+  }
+}
